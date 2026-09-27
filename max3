@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maximum Number</title>
+</head>
+<body>
+
+<form method="post">
+
+    Enter First Number:
+    <input type="number" name="n1">
+    <br><br>
+
+    Enter Second Number:
+    <input type="number" name="n2">
+    <br><br>
+
+    Enter Third Number:
+    <input type="number" name="n3">
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+<?php
+
+if($_POST)
+{
+    $n1 = $_POST["n1"];
+    $n2 = $_POST["n2"];
+    $n3 = $_POST["n3"];
+
+    echo "First Number is = $n1<br>";
+    echo "Second Number is = $n2<br>";
+    echo "Third Number is = $n3<br>";
+
+    if($n1 >= $n2 && $n1 >= $n3)
+        echo "n1 is Max";
+
+    elseif($n2 >= $n3)
+        echo "n2 is Max";
+
+    else
+        echo "n3 is Max";
+}
+
+?>
+
+</body>
+</html>
