@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Gill Sans', sans-serif;
+            background-color: azure;
+            text-align: center;
+
+        }
+        canvas{
+            border: 2px solid black;
+            background:hsl(0, 0, 100%);
+        }
+    </style>
+
+</head>
+<body>
+    <h1>HTML Canvas</h1>
+    <canvas id="myCanvas" width="800" height="500"></canvas>
+    <script>
+        const canvas=document.getElementById("myCanvas");
+        const ctx=canvas.getContext("2d");
+
+       ctx.fillRect(50,50,300,200);
+
+       ctx.beginPath();
+       ctx.moveTo(450,150);
+       ctx.lineTo(600,200);
+       ctx.lineTo(800,200);
+        ctx.lineTo(200,50);
+       ctx.lineTo(400,70);
+       ctx.closePath();
+       ctx.fillStyle="red";
+       ctx.fill();
+        ctx.stroke();
+
+        ctx.font="28px Arial";
+        ctx.fontStyle="green";
+        ctx.fillText("DATTEBHAYO",300,400);
+
+       
+        
+       
+  </script>
+    
+</body>
+</html>

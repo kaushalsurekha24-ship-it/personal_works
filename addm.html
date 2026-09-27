@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: rgb(39, 220, 220);
+            color: darkslategrey;
+            text-align: center;
+        }
+        body{
+            align-items: center;
+            background-color: gold;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 50%;
+            border-radius: 8px;
+            padding: 30px;
+            margin: 50px auto;
+            background-color: white;
+            box-shadow: 0 0 10px #ffcccc;
+        }
+        input,text,select{
+            width: 100%;
+            padding-bottom: 10px;
+            border: 1px solid;
+            border-radius: 4px;
+        }
+        label{
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="sumit"]{
+            background-color: aqua;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover{
+            background: #10d271;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="#" method="post">
+    <h1>Addmission Forrm</h1>
+    <label for="text" >Name</label>
+    <input type="text" id="Name"   name="FUllname" required placeholder="Enter Your Name">
+
+     <label for="date" >Date Of Birth</label>
+    <input type="date" id="DOB"  name="DOb" required placeholder="Enter Your DOB">
+    </form>
+     <label for="phone" >Mobile Number</label>
+    <input type="phone" id="Mob" name="MOB"  pattern="[0-9]{10}" required placeholder="Enter Your Mob">
+     <label for="email" >Email</label>
+    <input type="email" id="email"  name="email" required placeholder="Enter Your email">
+    <label for="Gender">Gender</label>
+     <select id=" gender" name="gender" required>
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">other</option>
+    </select> 
+    <label for="Course">Course</label>
+      <select id="Course" name="Course" required>
+        <option value="">Select</option>
+        <option value="BSC">BSC</option>
+        <option value="BCA">BCA</option>
+        <option value="BBA">BBA</option>
+    </select> 
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" maxlength="12" minlength="6" required placeholder="Enter Password(Minimum 6 charecters)">
+
+<label for="submit">Submit Form</label>
+<input type="submit" value="submit Application">
+</form>
+</div>
+</body>
+</html>

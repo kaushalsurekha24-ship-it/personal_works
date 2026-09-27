@@ -1,0 +1,5 @@
+x=int(input("enter fisrt number"))
+y=int(input("enter secound number"))
+print("x=",x,"y=",y)
+print("x==y=",x==y)
+print("x!=y=",x!=y)

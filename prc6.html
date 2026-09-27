@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css</title>
+    <style>
+
+        body{
+
+            background-color: rgb(163, 132, 233);
+            font-family: Arial,  sans-serif;
+            margin: 20px;
+        }
+        h1{
+            color: #a1287d;
+            text-align: center;
+           
+        }
+
+        p{
+            color: #bb2020;
+            font-size: 18px;
+           
+        }
+
+        .fancy-text{
+            font-family: Georgia, serif;
+            font-style: italic;
+           
+            color: aquamarine;
+
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover{
+            color: #ccf903;
+            text-decoration: underline;
+        }
+        ul{
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        ol{
+
+          list-style-type: upper-roman;
+          padding-left: 20px;
+
+        }
+        table{
+            width: 60%;
+            padding: 10px;
+            text-align: center;
+        }
+        th,td{
+            border: 1px solid #333;
+            padding: 10px;
+        }
+        th{
+            background-color: #2e8b57;
+            color: white;
+        }
+        tr:nth-child(odd)
+        {
+            background-color: #f9f9f9;
+        }
+        tr:hover{
+            background-color: #dcdcdc;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>css styling</h1>
+    <p>This a Pargraph showing<span class=".fancy-text"> fancy styled text</span>.</p>
+    <p>Visit <a href="https://chatgpt.com/">chatgpt</a>to see link styling in action.</p>
+
+    <h2>styled lists</h2>
+    <ul>
+        <li>apple</li>
+        <li>cherry</li>
+        <li>banana</li>
+    </ul>
+    <ol>
+        <li>Naruto</li>
+        <li>Death Note</li>
+        <li>One Piece</li>
+    </ol>
+    <h2>Styled table</h2>
+    <table>
+     <tr>
+            <th>Name</th>
+            <th>Subject</th>
+            <th>Marks</th>
+        </tr>
+        <tr>
+            <th>Kaushal</th>
+            <th>Math</th>
+           
+        <th>47</th>
+        </tr>
+        <tr>
+            <th>Neha</th>
+            <th>DS</th>
+            <th>48</th>
+        </tr>
+        <tr>
+            <th>Gaurav</th>
+            <th>electronics</th>
+            <th>41</th>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: beige;
+           font-family: Arial, sans-serif;
+
+
+        }
+        canvas {
+            border: 2px solid #333;
+            background-color: white;
+            margin-top: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Canvas</h1>
+    <canvas id="greekCanvas" width="800" height="500"></canvas>
+    <script>
+        const canvas=document.getElementById("greekCanvas");
+        const ctx=canvas.getContext("2d");
+
+
+        //Drawing shapes
+        ctx.fillRect(50,50,300,150);
+
+        // drawing Path
+    ctx.beginPath();
+    ctx.moveTo(450,150);
+    ctx.lineTo(600,50);
+    ctx.lineTo(750,150);
+    ctx.closePath();
+    ctx.fillStyle = "#C0A060";
+    ctx.fill();
+    ctx.stroke();
+
+
+        //Draw Text
+
+        ctx.font="28px Georgia";
+        ctx.fillStyle="green";
+        ctx.fillText("Welcome to HTML And CSS ",300,400);
+
+        ctx.font="20px Arial";
+        ctx.fillText("HTML AND CSS Framework",250,430);
+       
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+no=int(input("enter number for reverse"))
+print("before swap value=",no)
+a=no%10
+no=no//10
+b=no%10
+no=no//10
+c=no%10
+no=no//10
+d=no%10
+no=no//10
+rev=a*1000+b*100+c*10+d
+print("after swap value is=",rev)

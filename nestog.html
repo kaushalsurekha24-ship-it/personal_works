@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Επίδειξη CSS Nesting (CSS Nesting Demonstration)</title>
+    <style>
+       
+        .container {
+            background-color: #f0f8ff;
+            padding: 20px;
+            border: 2px solid #000080;
+            max-width: 600px;
+            margin: 20px auto;
+            font-family: sans-serif;
+            color: #000080;
+
+            h2 {
+                color: #dc143c;
+                border-bottom: 1px solid #dc143c;
+                padding-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+
+                &:hover {
+                    background-color: #add8e6;
+                    cursor: pointer;
+                }
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                padding: 10px 15px;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #45a049;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome to CSS Nesting (Welcome to CSS Nesting)</h2>
+        <p>
+        you so perfect blahh.. blahh.. oo i wish you wokeonwe day come to run first confess your love
+        </p>
+        <p>
+            Friend in need is friend in deed <code>.container</code>.
+        </p>
+        <button>Button clicking (Click Here)</button>
+        </div>
+
+</body>
+</html>
+
