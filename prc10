@@ -1,0 +1,9 @@
+def common_elements(l1,l2):
+    return(set(l1)&set(l2))
+
+
+l1=[1,2,3,4,5]
+l2=[3,4,6,7]
+
+res=common_elements(l1,l2)
+print(res)
